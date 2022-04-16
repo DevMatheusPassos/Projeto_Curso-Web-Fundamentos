@@ -12,6 +12,103 @@
         <title>Curso Web Fundamentos</title>
     </head>
     <body>
-        
+        <div id="container">
+            <header class="header">
+                <nav class="header__menu">
+                    <div class="menu__button">
+                        <span class="menu__buttonLine"></span>
+                    </div>
+
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Ínicio
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Quem sou
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__textContent">
+                    <h1 class="textContent__title">
+                        curso web fundamentos
+                    </h1>
+
+                    <p class="textContent__text">
+                        Aprenda <strong>HTML</strong>, <strong>CSS</strong> e <strong>Javascript</strong>
+                    </p>
+                </div>
+            </header>
+            <main class="main">
+                <section class="main__section main__sectionCards">
+                    <div class="sectionCards__card">
+                        <div class="sectionCards__img">
+                            <img src="images/card_01.png" alt="Seletores">
+                        </div>
+
+                        <h2 class="sectionCards__title">
+                            seletores
+                        </h2>
+                    </div>
+
+                    <div class="sectionCards__card">
+                        <div class="sectionCards__img">
+                            <img src="images/card_02.jpg" alt="Posicionamento">
+                        </div>
+
+                        <h2 class="sectionCards__title">
+                            posicionamento
+                        </h2>
+                    </div>
+
+                    <div class="sectionCards__card">
+                        <div class="sectionCards__img">
+                            <img src="images/card_03.jpg" alt="Fontes e Ícones">
+                        </div>
+
+                        <h2 class="sectionCards__title">
+                            fontes e ícones
+                        </h2>
+                    </div>
+                </section>
+
+                <section class="main__section main__sectionContent">
+                    <article class="sectionContent__article">
+                        <h2 class="sectionContent__title">
+                            Lorem ipsum
+                        </h2>
+
+                        <p class="sectionContent__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo itaque nulla rerum praesentium quia, nostrum labore tenetur asperiores repudiandae necessitatibus quis ullam sed ipsam soluta iure repellat autem distinctio.
+                        </p>
+
+                        <p class="sectionContent__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo itaque nulla rerum praesentium quia, nostrum labore tenetur asperiores repudiandae necessitatibus quis ullam sed ipsam soluta iure repellat autem distinctio.
+                        </p>
+                    </article>
+                </section>
+            </main>
+            <footer class="footer">
+                <p class="footer__text">
+                    Copyright &copy; <span id="year"></span>
+                </p>
+            </footer>
+        </div>
+
+        <script>
+            let year = document.querySelector("#year");
+            let date = new Date();
+
+            year.textContent = date.getFullYear();
+        </script>
     </body>
 </html> 
