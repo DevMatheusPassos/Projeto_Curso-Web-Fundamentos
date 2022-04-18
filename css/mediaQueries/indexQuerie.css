@@ -1,0 +1,103 @@
+@media screen and (max-width: 768px) {
+    .header__menu {
+        flex-direction: column;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+    .menu__button, .menu__list {
+        width: fit-content;
+    }
+    .menu__button { /* botão */
+        display: block;
+        padding: 5px 0;
+        cursor: pointer;
+    }
+    .menu__buttonLine { /* linha central do botão */
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 3px 0;
+        transition: transform .8s;
+        background-color: #fff;
+    }
+    .menu__button:before, .menu__button:after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        transition: transform 1s;
+        transform-origin: center center;
+    }
+    .--menuOpen .menu__buttonLine {
+        transform: scale(0);
+    }
+    .--menuOpen:before {
+        transform: translateY(200%) rotate(135deg);
+    }
+    .--menuOpen:after {
+        transform: translateY(-200%) rotate(-135deg);
+    }
+    .--menuOpen + .menu__list {
+        transform: translateX(0);
+    }
+    .menu__list {
+        flex-direction: column;
+        gap: 0;
+        transform: translateX(101%);
+        transition: transform .8s;
+    }
+    .menu__item + .menu__item {
+        border-top: 1px solid #fff;
+    }
+    .menu__link {
+        border: none;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 688px) {
+    /* Header */
+    .header {
+        padding: 20px 20px 107px;
+        background-position: -350px center;
+    }
+    .textContent__title {
+        transform: translateY(-20%);
+    }
+    .main {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /* Header */
+    .header {
+        min-height: 380px;
+        padding: 5px 5px 57px;
+        background-position: -300px center;
+    }
+    .textContent__title {
+        font-size: 38px;
+    }
+    /* Main */
+    .main {
+        width: 85%;
+    }
+    .main__section {
+        padding: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 322px) {
+    .main {
+        width: 96%;
+    }
+    .main__sectionCards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 20px;
+    }
+}
