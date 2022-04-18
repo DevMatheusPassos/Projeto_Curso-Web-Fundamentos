@@ -15,7 +15,7 @@
         <div id="container">
             <header class="header">
                 <nav class="header__menu">
-                    <div class="menu__button">
+                    <div class="menu__button" onclick="showMenu()">
                         <span class="menu__buttonLine"></span>
                     </div>
 
@@ -104,11 +104,6 @@
             </footer>
         </div>
 
-        <script>
-            let year = document.querySelector("#year");
-            let date = new Date();
-
-            year.textContent = date.getFullYear();
-        </script>
+        <script src="scripts/indexScript.js"></script>
     </body>
 </html> 
