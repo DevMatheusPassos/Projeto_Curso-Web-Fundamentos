@@ -75,7 +75,7 @@ li {
     2px 2px 3px rgba(0, 0, 0, 0.521), 
     3px 3px 3px rgba(0, 0, 0, 0.521);
     font-size: 46px;
-    transform: translateY(-100%)
+    transform: translateY(-100%);
 }
 .textContent__text {
     border-bottom: 2px solid;
@@ -100,7 +100,7 @@ li {
 /* Main - Section Cards */
 .main__sectionCards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 400fr));
     gap: 20px;
 }
 .sectionCards__img img {
